@@ -18,7 +18,7 @@ if (!defined('PHPBB_INSTALLED')) {
     // database.inc.php also exists when the question if
     // dbconfig-common should be used was answered with "No"
     // therefore we don't need to check its existence
-    @include('/etc/phpbb3/database.inc.php');
+    @include('database.inc.php');
     if (empty($dbtype) && @constant('IN_INSTALL')!='true') {
         die("The board configuration seems to be incomplete. Use the
              dbconfig-common method provided with the package setup
